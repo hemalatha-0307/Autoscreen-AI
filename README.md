@@ -87,11 +87,11 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 
 ## 📁 Files in This Repository
 
-| File Name                 | Description                                      |
+| File Name                | Description                                      |
 |--------------------------|--------------------------------------------------|
 | `README.md`              | This file with full project documentation.       |
-| `Sasha_Wagner_Output.csv`| Output CSV from Sasha Wagner's resume.           |
-| `OtherResume_Output.csv` | Output CSV from another sample resume.           |
+| `results.csv`            | Output CSV from Sasha Wagner's resume.           |
+| `selected.csv`           | Output CSV from another sample resume.           |
 | `lambda_function.py`     | Lambda function handling Textract + Comprehend.  |
 
 ---
