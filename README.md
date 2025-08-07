@@ -36,19 +36,17 @@ This system utilizes:
 Here are the resumes that were analyzed using AutoScreen AI:
 
 | Resume Name         | Image Preview                                |
-|---------------------|-----------------------------------------------|
-| Sasha Wagner Resume | |
-| Other Sample Resume | ![Second Resume](images/second_resume.png)           |
+|---------------------|----------------------------------------------|
+| Sasha Wagner Resume | ![Sasha Wagner Resume](./Sasha Wagner.png)   | 
+| Hal Feeney Resume   | ![Hal Feeney Resume](./Hal feeney.png)       |
 
 ---
 
 ## 📊 Output Screenshot
 
-A quick look at the output structured data from DynamoDB, viewed in Excel format:
+A quick look at the output structured data from DynamoDB:
 
-![DynamoDB Output Screenshot](images/output_screenshot.png)
-
-> _Make sure your screenshot clearly shows properly wrapped text in columns._
+![DynamoDB Output Screenshot](./DynamoDB table.png)
 
 ---
 
@@ -84,7 +82,6 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 
 ---
 
-
 ## 📁 Files in This Repository
 
 | File Name                | Description                                      |
@@ -106,7 +103,6 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 
 ## 🔗 Project Demo
 👉 Check my LinkedIn post here: [LinkedIn Demo Post](https://www.linkedin.com/in/hemalatha-m-064190332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
 
 ---
 
