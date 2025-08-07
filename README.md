@@ -66,25 +66,6 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 
 ---
 
-## 📁 Files in This Repository
-
-| File Name                 | Description                                      |
-|--------------------------|--------------------------------------------------|
-| `README.md`              | This file with full project documentation.       |
-| `Sasha_Wagner_Output.csv`| Output CSV from Sasha Wagner's resume.           |
-| `OtherResume_Output.csv` | Output CSV from another sample resume.           |
-| `lambda_function.py`     | Lambda function handling Textract + Comprehend.  |
-
----
-
-## 🔮 Future Enhancements
-
-✨ I am working on taking AutoScreen AI even further:
-- 🤖 **LLM Integration using Amazon Bedrock** (or OpenAI): To extract fields like Education, Skills, and Experience more accurately            using foundation models.
-- 📝 Improve detection of candidate achievements, certifications, and project descriptions using advanced NLP models.
-
----
-
 ## 💡 Key Features
 
 - 📄 Upload resumes to an S3 bucket (PDF format).
@@ -103,6 +84,26 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 - Amazon Textract
 - Amazon Comprehend
 - Amazon DynamoDB
+
+---
+
+
+## 📁 Files in This Repository
+
+| File Name                 | Description                                      |
+|--------------------------|--------------------------------------------------|
+| `README.md`              | This file with full project documentation.       |
+| `Sasha_Wagner_Output.csv`| Output CSV from Sasha Wagner's resume.           |
+| `OtherResume_Output.csv` | Output CSV from another sample resume.           |
+| `lambda_function.py`     | Lambda function handling Textract + Comprehend.  |
+
+---
+
+## 🔮 Future Enhancements
+
+✨ I am working on taking AutoScreen AI even further:
+- 🤖 **LLM Integration using Amazon Bedrock** (or OpenAI): To extract fields like Education, Skills, and Experience more accurately            using foundation models.
+- 📝 Improve detection of candidate achievements, certifications, and project descriptions using advanced NLP models.
 
 ---
 
