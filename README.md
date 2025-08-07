@@ -62,11 +62,11 @@ A quick look at the output structured data from DynamoDB:
 ---
 
 ## 💡 Key Features
-  🚀 End-to-End Automation – No manual intervention needed; resumes are auto-processed from upload to output.
-  🧠 AI-Powered Analysis – Uses Amazon Comprehend to intelligently extract relevant fields like name, email, skills, education, and more.
-  📦 Structured Data Storage – Cleanly stores extracted data in DynamoDB for fast access and scalability.
-  📊 Recruiter-Ready Output – Generates CSV files that can be directly used for filtering or analysis.
-  🔐 Secure & Scalable – Built on AWS cloud infrastructure ensuring data security and seamless scaling for multiple resumes.
+- 🚀 End-to-End Automation – No manual intervention needed; resumes are auto-processed from upload to output.
+- 🧠 AI-Powered Analysis – Uses Amazon Comprehend to intelligently extract relevant fields like name, email, skills, education, and more.
+- 📦 Structured Data Storage – Cleanly stores extracted data in DynamoDB for fast access and scalability.
+- 📊 Recruiter-Ready Output – Generates CSV files that can be directly used for filtering or analysis.
+- 🔐 Secure & Scalable – Built on AWS cloud infrastructure ensuring data security and seamless scaling for multiple resumes.
 
 ---
 
