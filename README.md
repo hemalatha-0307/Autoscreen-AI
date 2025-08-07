@@ -4,6 +4,87 @@
 
 **AutoScreen AI** is an intelligent, cloud-based resume screening project designed to automate the process of extracting key information from candidate resumes using AWS services.
 
+This system utilizes:
+- 🗂️ **Amazon Textract** for extracting text from PDF resumes  
+- 🧠 **Amazon Comprehend** for NLP-based field/entity detection  
+- 🗃️ **DynamoDB** to store structured data  
+- 📤 **CSV output** for recruiters to download and review  
+- 🔄 Future integration with **Amazon Bedrock** or **OpenAI API** to improve context-aware data extraction
+
+---
+
+## 💼 What AutoScreen AI Can Do
+
+✔️ Auto-extracts fields like:
+- Name  
+- Email & Phone  
+- Education  
+- Work Experience  
+- Projects  
+- Certifications  
+- Languages Known  
+- Achievements
+
+✔️ No manual parsing needed  
+✔️ Structured resume insights in tabular format  
+✔️ Ready for HR analytics or filtering  
+✔️ Output stored in **DynamoDB** and downloadable as `.csv`
+
+---
+
+## 🧪 Sample Resumes Used
+
+Here are the resumes that were analyzed using AutoScreen AI:
+
+| Resume Name         | Image Preview                                |
+|---------------------|-----------------------------------------------|
+| Sasha Wagner Resume | |
+| Other Sample Resume | ![Second Resume](images/second_resume.png)           |
+
+---
+
+## 📊 Output Screenshot
+
+A quick look at the output structured data from DynamoDB, viewed in Excel format:
+
+![DynamoDB Output Screenshot](images/output_screenshot.png)
+
+> _Make sure your screenshot clearly shows properly wrapped text in columns._
+
+---
+
+## 📁 Files in This Repository
+
+| File Name                 | Description                                      |
+|--------------------------|--------------------------------------------------|
+| `README.md`              | This file with full project documentation.       |
+| `Sasha_Wagner_Output.csv`| Output CSV from Sasha Wagner's resume.           |
+| `OtherResume_Output.csv` | Output CSV from another sample resume.           |
+| `lambda_function.py`     | Lambda function handling Textract + Comprehend.  |
+
+---
+
+## 🔮 Future Enhancements
+
+✨ We're working on taking AutoScreen AI even further:
+
+- 🔍 **Amazon Bedrock** / **OpenAI API** integration  
+  → Smarter, more accurate field extraction using LLMs  
+- 📊 Visual dashboards for recruiter filtering  
+- 📬 Automated email notifications to recruiters/candidates  
+
+---
+
+## ⚙️ How It Works – Project Flow
+
+```mermaid
+graph TD
+    A[PDF Resume Upload to S3] --> B[Lambda Triggered]
+    B --> C[Amazon Textract Extracts Text]
+    C --> D[Amazon Comprehend Performs NLP]
+    D --> E[Structured Data Stored in DynamoDB]
+    E --> F[Data Exported to CSV]
+
 It uses:
 - **Amazon Textract** to extract raw text from PDF resumes.
 - **Amazon Comprehend** to analyze and detect meaningful information like name, email, skills, etc.
@@ -44,9 +125,9 @@ Here’s a glimpse of the real output extracted from the resume:
 | File Name                | Description                                      |
 |-------------------------|--------------------------------------------------|
 | `README.md`             | This file explaining the project.                |
-| `Sasha_Wagner_Output.csv` | Extracted CSV from Sasha Wagner's resume.       |
+| `Sasha_Wagner_Output.csv | Extracted CSV from Sasha Wagner's resume.       |
 | `OtherResume_Output.csv` | Another sample resume result.                   |
-| `resumeGPT.py`          | Lambda function that powers this resume screener.|
+| `lambda_function.py`     | Lambda function that powers this resume screener.|
 
 ---
 
