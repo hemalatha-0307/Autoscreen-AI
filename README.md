@@ -37,8 +37,8 @@ Here are the resumes that were analyzed using AutoScreen AI:
 
 | Resume Name         | Image Preview                                |
 |---------------------|----------------------------------------------|
-| Sasha Wagner Resume | ![Sasha Wagner Resume](./Sasha Wagner.png)   | 
-| Hal Feeney Resume   | ![Hal Feeney Resume](./Hal feeney.png)       |
+| Sasha Wagner Resume | ![Sasha](Sasha%20Wagner.png)   | 
+| Hal Feeney Resume   | ![Hal](Hal%20Feeney.png)       |
 
 ---
 
@@ -46,7 +46,7 @@ Here are the resumes that were analyzed using AutoScreen AI:
 
 A quick look at the output structured data from DynamoDB:
 
-![DynamoDB Output Screenshot](./DynamoDB table.png)
+![DynamoDB Output Screenshot](DynamoDB table.png)
 
 ---
 
