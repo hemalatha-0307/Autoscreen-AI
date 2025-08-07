@@ -4,6 +4,8 @@
 
 **AutoScreen AI** is an intelligent, cloud-based resume screening project designed to automate the process of extracting key information from candidate resumes using AWS services.
 
+---
+
 This system utilizes:
 - 🗂️ **Amazon Textract** for extracting text from PDF resumes  
 - 🧠 **Amazon Comprehend** for NLP-based field/entity detection  
@@ -53,6 +55,17 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 
 ---
 
+## ⚙️ How It Works – Project Flow
+
+1. Resume (PDF) uploaded to **S3 Bucket**.
+2. **Lambda function** is triggered.
+3. **Textract** reads the text from the resume.
+4. **Comprehend** analyzes and extracts entities like Name, Email, Skills, etc.
+5. Final structured data is saved in **DynamoDB**.
+6. Data is exported as CSV for viewing or processing.
+
+---
+
 ## 📁 Files in This Repository
 
 | File Name                 | Description                                      |
@@ -66,30 +79,9 @@ A quick look at the output structured data from DynamoDB, viewed in Excel format
 
 ## 🔮 Future Enhancements
 
-✨ We're working on taking AutoScreen AI even further:
-
-- 🔍 **Amazon Bedrock** / **OpenAI API** integration  
-  → Smarter, more accurate field extraction using LLMs  
-- 📊 Visual dashboards for recruiter filtering  
-- 📬 Automated email notifications to recruiters/candidates  
-
----
-
-## ⚙️ How It Works – Project Flow
-
-```mermaid
-graph TD
-    A[PDF Resume Upload to S3] --> B[Lambda Triggered]
-    B --> C[Amazon Textract Extracts Text]
-    C --> D[Amazon Comprehend Performs NLP]
-    D --> E[Structured Data Stored in DynamoDB]
-    E --> F[Data Exported to CSV]
-
-It uses:
-- **Amazon Textract** to extract raw text from PDF resumes.
-- **Amazon Comprehend** to analyze and detect meaningful information like name, email, skills, etc.
-- **AWS Lambda** to coordinate the process and structure the data.
-- **Amazon DynamoDB** to store the extracted structured data.
+✨ I am working on taking AutoScreen AI even further:
+- 🤖 **LLM Integration using Amazon Bedrock** (or OpenAI): To extract fields like Education, Skills, and Experience more accurately            using foundation models.
+- 📝 Improve detection of candidate achievements, certifications, and project descriptions using advanced NLP models.
 
 ---
 
@@ -104,53 +96,6 @@ It uses:
 
 ---
 
-## 🧪 Sample Resume Used
-
-**Resume:** Sasha Wagner  
-**Used for:** Demo Output  
-**File:** [`Sasha_Wagner_Output.csv`](./Sasha_Wagner_Output.csv)
-
----
-
-## 📷 Output Screenshot
-
-Here’s a glimpse of the real output extracted from the resume:
-
-> _Insert a clean screenshot here showing your CSV opened in Excel or any tool in a tabular format, preferably with auto-adjusted row height and wrapped text._
-
----
-
-## 📁 Files in This Repository
-
-| File Name                | Description                                      |
-|-------------------------|--------------------------------------------------|
-| `README.md`             | This file explaining the project.                |
-| `Sasha_Wagner_Output.csv | Extracted CSV from Sasha Wagner's resume.       |
-| `OtherResume_Output.csv` | Another sample resume result.                   |
-| `lambda_function.py`     | Lambda function that powers this resume screener.|
-
----
-
-## 🎯 Future Enhancements
-
-We plan to integrate:
-- ✅ **Amazon Bedrock** or **OpenAI API** for even more accurate field detection.
-- 📊 Dashboard insights on candidate data.
-- 📬 Auto-email triggers after screening.
-
----
-
-## 🤖 How It Works – Project Flow
-
-1. Resume (PDF) uploaded to **S3 Bucket**.
-2. **Lambda function** is triggered.
-3. **Textract** reads the text from the resume.
-4. **Comprehend** analyzes and extracts entities like Name, Email, Skills, etc.
-5. Final structured data is saved in **DynamoDB**.
-6. Data is exported as CSV for viewing or processing.
-
----
-
 ## 📌 Technologies Used
 
 - AWS S3
@@ -161,9 +106,9 @@ We plan to integrate:
 
 ---
 
-## 🧠 Contact
+## 🔗 Project Demo
+👉 Check my LinkedIn post here: [LinkedIn Demo Post](https://www.linkedin.com/in/hemalatha-m-064190332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
-For feedback, improvements, or ideas – feel free to connect!
 
 ---
 
