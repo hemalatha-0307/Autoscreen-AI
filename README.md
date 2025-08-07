@@ -46,7 +46,7 @@ Here are the resumes that were analyzed using AutoScreen AI:
 
 A quick look at the output structured data from DynamoDB:
 
-![DynamoDB Output Screenshot](DynamoDB table.png)
+![DynamoDB Output Screenshot](DynamoDB%20table.png)
 
 ---
 
@@ -84,12 +84,15 @@ A quick look at the output structured data from DynamoDB:
 
 ## 📁 Files in This Repository
 
-| File Name                | Description                                      |
-|--------------------------|--------------------------------------------------|
-| `README.md`              | This file with full project documentation.       |
-| `results.csv`            | Output CSV from Sasha Wagner's resume.           |
-| `selected.csv`           | Output CSV from Hal Feeney's resume.           |
-| `lambda_function.py`     | Lambda function handling Textract + Comprehend.  |
+| File Name                  | Description                                      |
+|----------------------------|--------------------------------------------------|
+| `README.md`                | This file with full project documentation.       |
+| `Sasha Wagner results.csv` | Output CSV from Sasha Wagner's resume.           |
+| `Hal feeney results.csv`   | Output CSV from Hal Feeney's resume.             |
+| `lambda_function.py`       | Lambda function handling Textract + Comprehend.  |
+| `Sasha Wagner.png`         | Sasha Wagner Resume.  |
+| `Hal Feeney.png`           | Hal Feeney Resume .  |
+| `DynamoDB table.png`       | Output DynamoDB table in AWS.  |
 
 ---
 
